@@ -1,0 +1,82 @@
+[
+'000008856775',
+'000009006090',
+'000009006432',
+'000009006526',
+'000009008188',
+'000009008496',
+'000009008823',
+'000009198028',
+'000009269247',
+'000009347216',
+'000009279989',
+'000008676079',
+'000007963542',
+'000005805872',
+'000005593120',
+'000003058856',
+'000003004138',
+'000002852540',
+'000002726320',
+'000002681143',
+'000002666238',
+'000002399734',
+'000002281193',
+'000001224890',
+'000000600029'
+]
+
+
+
+UPDATE tranlog SET date = '2022-05-11 07:23:31.896', transmissiondate = '2022-05-11 06:23:29' WHERE id = '1065128';
+UPDATE tranlog SET date = '2022-08-11 10:53:06.327', transmissiondate = '2022-08-11 09:52:35' WHERE id = '2098959';
+UPDATE tranlog SET date = '2022-10-15 08:00:17.335', transmissiondate = '2022-10-15 07:00:00' WHERE id = '3711017';
+UPDATE tranlog SET date = '2022-10-23 18:31:40.596', transmissiondate = '2022-10-23 17:31:19' WHERE id = '3862127';
+UPDATE tranlog SET date = '2022-11-09 12:35:39.224', transmissiondate = '2022-11-09 11:32:58' WHERE id = '4196878';
+UPDATE tranlog SET date = '2022-11-10 12:38:12.85', transmissiondate = '2022-11-10 11:34:56' WHERE id = '4215331';
+UPDATE tranlog SET date = '2022-11-13 08:44:53.456', transmissiondate = '2022-11-13 07:41:00' WHERE id = '4270631';
+UPDATE tranlog SET date = '2022-11-22 06:44:00.624', transmissiondate = '2022-11-22 05:38:56' WHERE id = '4425483';
+UPDATE tranlog SET date = '2022-12-02 17:26:51.851', transmissiondate = '2022-12-02 17:21:15' WHERE id = '4610093';
+UPDATE tranlog SET date = '2022-12-06 12:24:51.513', transmissiondate = '2022-12-06 11:24:21' WHERE id = '4675997';
+UPDATE tranlog SET date = '2023-04-28 09:23:39.665', transmissiondate = '2023-04-28 08:22:22' WHERE id = '7824426';
+UPDATE tranlog SET date = '2023-05-08 16:17:03.155', transmissiondate = '2023-05-08 15:17:27' WHERE id = '8093911';
+UPDATE tranlog SET date = '2023-09-15 08:26:25.233', transmissiondate = '2023-09-15 07:24:16' WHERE id = '11105470';
+UPDATE tranlog SET date = '2023-11-10 12:37:31.217', transmissiondate = '2023-11-10 12:37:21' WHERE id = '12102154';
+UPDATE tranlog SET date = '2023-11-24 09:00:16', transmissiondate = '2023-11-23 10:00:17' WHERE id = '12367471';
+UPDATE tranlog SET date = '2023-12-04 17:41:40.832', transmissiondate = '2023-12-04 17:41:38' WHERE id = '12571532';
+UPDATE tranlog SET date = '2023-12-04 18:03:49.787', transmissiondate = '2023-12-04 17:02:50' WHERE id = '12572150';
+UPDATE tranlog SET date = '2023-06-12 11:30:42.328', transmissiondate = '2023-06-12 10:30:31' WHERE id = '9006432';
+UPDATE tranlog SET date = '2023-12-04 18:08:02.998', transmissiondate = '2023-12-04 18:07:02' WHERE id = '12572308';
+UPDATE tranlog SET date = '2023-12-04 20:10:51.832', transmissiondate = '2023-12-04 19:09:52' WHERE id = '12574996';
+UPDATE tranlog SET date = '2023-12-04 20:40:19.27', transmissiondate = '2023-12-04 20:39:16' WHERE id = '12575473';
+UPDATE tranlog SET date = '2023-06-12 12:45:33.813', transmissiondate = '2023-06-12 11:45:25' WHERE id = '9008496';
+UPDATE tranlog SET date = '2023-12-04 21:25:34.765', transmissiondate = '2023-12-04 20:24:33' WHERE id = '12575986';
+UPDATE tranlog SET date = '2023-06-12 12:54:54.312', transmissiondate = '2023-06-12 11:54:45' WHERE id = '9008823';
+UPDATE tranlog SET date = '2023-12-18 09:23:26.691', transmissiondate = '2023-12-18 08:23:04' WHERE id = '12838576';
+UPDATE tranlog SET date = '2023-12-22 18:43:28.111', transmissiondate = '2023-12-22 17:42:59' WHERE id = '12931103';
+UPDATE tranlog SET date = '2023-12-23 11:45:48.694', transmissiondate = '2023-12-23 11:45:29' WHERE id = '12945474';
+UPDATE tranlog SET date = '2023-12-27 19:17:09.311', transmissiondate = '2023-12-27 18:16:30' WHERE id = '13033634';
+
+
+
+ids with field 39 of 14 
+
+[
+'000012240965',
+'000012247531',
+'000012099651',
+'000011806807',
+'000008588843',
+'000009552856',
+'000010751653',
+'000011424815',
+'000011984378',
+'000011976804',
+'000010541500',
+'000010248516',
+'000010149620',
+'000009620631',
+'000009532964',
+'000008404735',
+
+]

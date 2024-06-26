@@ -1,0 +1,17 @@
+{
+  "name": "sandbox",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "process.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csvtojson": "^2.0.10"
+  }
+}
