@@ -23,7 +23,7 @@ function writeStoreFile(data) {
     "abu-processed.json"
   );
   fs.writeFileSync(filePath, data, "utf-8");
-  console.log(colors.green("store (abu-processed.json) was updated ..."));
+  console.log(colors.green("\nstore (abu-processed.json) was updated ..."));
 }
 
 function readFile(fileName) {
@@ -37,7 +37,7 @@ function readArgFiles(fileArray) {
   if (!fileArray.length) return result;
 
   for (let f of fileArray) {
-    let filePath = path.join(__dirname, "..", "data", "req", f);
+    let filePath = path.join(__dirname, "..", "data", "req", "abu", f);
     let fileData = readFile(filePath);
     fileData = fileData.trim().split("\n");
     let key = f.replace("abu-", "").replace(".txt", "");
@@ -95,7 +95,7 @@ function getStoreData(storeData, newData) {
     }
 
     let uniqueIds = getUniqueMonthIds(ids, monthIds);
-    console.log(colors.yellow(uniqueIds));
+    //console.log(colors.yellow(uniqueIds));
     let item = {};
     item[k] = uniqueIds;
     m.push(item);
@@ -148,7 +148,7 @@ function getQueryData(fileData) {
 }
 
 function saveQueryData(queryString, fileName) {
-  let file = path.join(__dirname, "..", "data", "res", fileName);
+  let file = path.join(__dirname, "..", "data", "res", "abu", fileName);
   fs.writeFileSync(file, queryString, { flag: "w" });
   console.log(colors.yellow(`Query Data written in file ${file}`));
 }
@@ -187,8 +187,8 @@ export default function runAbuProcess(fileArray) {
       storeInsertFile(monthItem);
     }
     
-    console.log(`storing updated data at ...${path.join(__dirname, '..', 'data/req')}`);
-    console.log(JSON.stringify(currentStore.store, null, 2));
+    //console.log(`storing updated data at ...${path.join(__dirname, '..', 'data/req/abu/')}`);
+    //console.log(JSON.stringify(currentStore.store, null, 2));
 
 
     writeStoreFile(JSON.stringify(currentStore.store));
@@ -222,7 +222,7 @@ export function printtAbuStats() {
     let yearMonth = (Object.keys(month))[0];
     let cardIds = (Object.values(month))[0];
     runningCount += cardIds.length;
-    summary.push(colors.yellow(`\t${yearMonth} has ${cardIds.length} ID(s)`));
+    summary.push(colors.yellow(`\t${yearMonth} has ${Number(cardIds.length).toLocaleString()} ID(s)`));
   }
   summary.push(colors.red(`\n\tRunning Month id Count is ${runningCount}`))
   console.log(colors.cyan(summary.join("\n")));
