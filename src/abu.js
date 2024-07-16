@@ -147,8 +147,14 @@ function getQueryData(fileData) {
   );
 }
 
-function saveQueryData(queryString, fileName) {
-  let file = path.join(__dirname, "..", "data", "res", "abu", fileName);
+/**
+ * Stores the sql insert statement to the specified filename
+ * @param {string} queryString - data to write
+ * @param {string} folder - folder sub-path, unique to file name
+ * @param {string} fileName - file name to be stored
+ */
+function saveQueryData(queryString, folder, fileName) {
+  let file = path.join(__dirname, "..", "data", "res", "abu", folder, fileName);
   fs.writeFileSync(file, queryString, { flag: "w" });
   console.log(colors.yellow(`Query Data written in file ${file}`));
 }
@@ -165,11 +171,12 @@ function storeInsertFile(monthObj) {
   */
   let yearMonth = (Object.keys(monthObj))[0];
   let cardIds = (Object.values(monthObj))[0];
+  let year = yearMonth.substring(0, 4);
 
   let queryData = extractFileData(cardIds);
   let queryString = getQueryData(queryData);
 
-  saveQueryData(queryString.join(""), `abu-${yearMonth}.sql`);
+  saveQueryData(queryString.join(""), year, `abu-${yearMonth}.sql`);
 }
 
 export default function runAbuProcess(fileArray) {
@@ -198,7 +205,7 @@ export default function runAbuProcess(fileArray) {
   console.log(colors.green('\nApplication run completed!!!\n\n'));
 }
 
-export function printtAbuStats() {
+export function printAbuStats() {
   let storeData = JSON.parse(readStoreData());
   let summary = [];
   let countMonth = storeData.months.length;

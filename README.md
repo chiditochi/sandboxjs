@@ -8,3 +8,7 @@
 - data/req/ folder holds file(s) request(s) 
 - data/res/ folder holds file(s) response(s)
 ```
+
+```
+- touch abu-2021-{1..12}.txt 
+```

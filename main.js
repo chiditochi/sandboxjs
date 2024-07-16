@@ -4,7 +4,7 @@ import {
   getUniqueRRN as getUnique,
   runGetCSVData,
 } from "./src/rrn.js";
-import runAbuProcess, { printtAbuStats } from "./src/abu.js";
+import runAbuProcess, { printAbuStats } from "./src/abu.js";
 
 //process
 //process();
@@ -33,4 +33,4 @@ import runAbuProcess, { printtAbuStats } from "./src/abu.js";
 //   "abu-2023-02.txt",
 //   "abu-2023-01.txt",
 // ]);
-printtAbuStats();
+printAbuStats();
